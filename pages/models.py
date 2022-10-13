@@ -12,6 +12,6 @@ class Team(models.Model):
     google_plus_link=models.URLField(max_length=100)
     created_date= models.DateTimeField(auto_now_add=True)
 
-    def _str_(self):
+    def __str__(self):
         print(first_name)
         return self.first_name
