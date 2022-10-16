@@ -8,7 +8,7 @@ def home(request):
     data={
         'teams':teams,
     }
-    return render(request, 'pages/home.html')
+    return render(request, 'pages/home.html',data)
 
 def about(request):
     return render(request,'pages/about.html')
